@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    width: 1600px;
+    height: 1200px;
+    position: relative;
+  }
+  
+//display flex
+.disp-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//wrappers 
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+//colors 
+$MainScreenBlue: rgba(0, 91, 193, 0.6);
+$white: #ffffff;
+$RegularFontColor: #343434;
+
+//MIXINS
+//mixin font regular h2
+// @mixin FontRegularH2 () {
+//   color: #343434;
+//   font-family: 'Oswald';
+//   font-style: normal;
+//   font-weight: normal;
+//   font-size: 18px;
+//   line-height: 27px;
+//   letter-spacing: 0.05em;
+//   text-transform: uppercase;
+// }
+//mixin font date in article
+// @mixin FontDateArticle {
+//   font-family: Open Sans;
+//   font-style: normal;
+//   font-weight: 600;
+//   font-size: 14px;
+//   line-height: 19px;
+//   align-self: center;
+//   color: $RegularFontColor;
+//   align-self: flex-end;
+// }
+//mixin font regular main small
+// @mixin FontRegularSmall {
+//   font-family: Open Sans;
+//   font-style: normal;
+//   font-weight: 300;
+//   font-size: 14px;
+//   line-height: 19px;
+//   color: $RegularFontColor;
+// }
