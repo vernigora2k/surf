@@ -8,8 +8,9 @@ html {
   }
   
   body {
-    width: 1600px;
-    height: 1200px;
+    max-width: 1600px;
+    max-height: 1200px;
+    // background-color: lightgoldenrodyellow;
     position: relative;
   }
   
@@ -30,6 +31,37 @@ $MainScreenBlue: rgba(0, 91, 193, 0.6);
 $white: #ffffff;
 $RegularFontColor: #343434;
 
+//animations
+@keyframes swim-wawe {
+  0% {
+      background-position: 200% -20%;
+     }
+  100% {}
+}
+
+@keyframes swim-board {
+  0% {
+      }
+  75% {
+      }
+  100% {
+      //transform: translateX(100px);
+      background-position-x: 600px;
+      //left: 600px;
+      transform-origin: 1250px 200px 0px;
+      transform: rotate(-90deg);
+      
+      }
+}
+
+@keyframes swim-board-rotate {
+  0% {}
+  75% {}
+  100% {
+        transform: rotate(90deg);
+       }
+}
+ 
 //MIXINS
 //mixin font regular h2
 // @mixin FontRegularH2 () {

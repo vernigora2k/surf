@@ -4,8 +4,33 @@
 section.wawes {
   background: url(/img/wawes/wawe-right.png);
   background-repeat: no-repeat;
-  height: 1553px;
-  width: 1221px;
+  background-size: 1221px;
+  background-position: 100% 30%;
+  height: 1200px;
+  width: 1600px;
+  z-index: -1;
   position: absolute;
-  
-}
+  left: 0px;
+  top: 0px;
+
+  animation: swim-wawe 3s ease-in-out 
+             1s infinite alternate;
+ }
+
+ //section surfboard---------------------------
+ section.surfboard {
+   background: url(/img/surfboard/surfboard.png);
+   background-repeat: no-repeat;
+   background-size: 1000px;
+   background-position-x: -70px;;
+   z-index: 3;
+   height: 1200px;
+   width: 1600px;
+   position: relative;
+  //  left: 950px;
+   top: 270px;
+
+   animation: swim-board 3s ease-out 1s alternate;
+   animation-fill-mode: forwards;
+   //animation: swim-board-rotate 2s ease 2s infinite alternate;
+ }
