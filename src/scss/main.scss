@@ -17,13 +17,98 @@ section.wawes {
              1s infinite alternate;
  }
 
+//section main---------------------------------
+section.main {
+  animation: main-appear 3s ease-in-out 1s alternate;
+  position: absolute;
+  left: 82px;
+  top: 153px;
+  width: 1258px;//1258
+  height: 765px; 
+  background-image: url(/img/main/main-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  header.header.disp-flex {
+    justify-content: space-between;
+    div.header__logo {
+      margin-left: 110px;
+      margin-top: 28px;
+      a {
+        img {}
+      }
+    }
+    nav.header__nav {
+      margin-right: 68px;//130
+      margin-top: 32px;
+      ul.nav-list.disp-flex {
+        li.nav-list__item {
+          margin-right: 62px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  div.main.disp-flex {
+    justify-content: space-between;
+    div.main__column-title {
+      width: 362px;
+      margin-left: 110px;
+      margin-top: 28px;
+      div.title {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 77px;
+        line-height: 104.5%;
+        text-transform: uppercase;
+        color: #3D3A48;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      div.under-title {
+        margin-top: 6px;
+      }
+
+      div.comment {
+        width: 360px;
+        height: 127px;
+        left: 111px;
+        //top: 330px;
+        background: rgba(42, 74, 104, 0.51);
+        backdrop-filter: blur(20px);
+        border-radius: 100px;
+        div.comment__avatar {}
+        div.comment__article {
+          div.name {}
+          div.phrase {}
+        }
+      }
+    }
+
+    div.main__column-now-in-bali {
+      div.nov-in {
+
+      }
+    }
+
+    div.none {
+      flex-shrink: 5;
+    }
+  }
+}
+
+
  //section surfboard---------------------------
  section.surfboard {
    background: url(/img/surfboard/surfboard.png);
    background-repeat: no-repeat;
    background-size: 1000px;       //1000 955
    background-position-x: -70px; // -70
-   background-position-y: -55px; // -20
+   background-position-y: 20px; // -20 -55
    z-index: 3;
    height: 1200px;
    width: 1600px;
@@ -31,7 +116,8 @@ section.wawes {
   //  left: 950px;
    top: 200px;  //270
 
-   animation: swim-board 3s ease-out 1s alternate;
+   animation: swim-board 3s ease-out 1s infinite alternate;
    animation-fill-mode: forwards;
    //animation: swim-board-rotate 2s ease 2s infinite alternate;
  }
+

@@ -13,9 +13,9 @@ html {
     font-weight: normal;
     font-size: 32px;
     line-height: 113.5%;
+    color: #30545c;
     max-width: 1600px;
     max-height: 1200px;
-    // background-color: lightgoldenrodyellow;
     position: relative;
   }
   
@@ -67,6 +67,14 @@ $RegularFontColor: #343434;
        }
 }
  
+@keyframes main-appear {
+  0% {
+      left: -400px;
+      opacity: 0;
+      }
+  50% {opacity: 0.6;}
+  100% {opacity: 1;}
+}
 //MIXINS
 //mixin font regular h2
 // @mixin FontRegularH2 () {
