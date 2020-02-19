@@ -51,9 +51,9 @@ $RegularFontColor: #343434;
       }
   100% {
       //transform: translateX(100px);
-      background-position-x: 600px;
+      background-position-x: 605px; //655
       //left: 600px;
-      transform-origin: 1250px 200px 0px;
+      transform-origin: 1250px 200px 0px; //1250 200 0
       transform: rotate(-90deg);
       
       }

@@ -21,14 +21,15 @@ section.wawes {
  section.surfboard {
    background: url(/img/surfboard/surfboard.png);
    background-repeat: no-repeat;
-   background-size: 1000px;
-   background-position-x: -70px;;
+   background-size: 1000px;       //1000 955
+   background-position-x: -70px; // -70
+   background-position-y: -55px; // -20
    z-index: 3;
    height: 1200px;
    width: 1600px;
    position: relative;
   //  left: 950px;
-   top: 270px;
+   top: 200px;  //270
 
    animation: swim-board 3s ease-out 1s alternate;
    animation-fill-mode: forwards;
