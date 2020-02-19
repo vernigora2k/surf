@@ -75,6 +75,12 @@ $RegularFontColor: #343434;
   50% {opacity: 0.6;}
   100% {opacity: 1;}
 }
+
+@keyframes background-rotate {
+  0% {transform: rotate(15deg);}
+  //50% {transform: rotate(10deg);}
+  100% {}
+}
 //MIXINS
 //mixin font regular h2
 // @mixin FontRegularH2 () {

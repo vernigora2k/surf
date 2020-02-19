@@ -18,16 +18,39 @@ section.wawes {
  }
 
 //section main---------------------------------
+section.main:before { //main background in :before
+  position: absolute;
+  content: "";
+  width: 1258px;
+  height: 756px;
+  background-image: url(/img/main/main-img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
+  animation: background-rotate 3s ease-in 1s infinite alternate;
+}
 section.main {
-  animation: main-appear 3s ease-in-out 1s alternate;
+  animation: main-appear 3s ease-in-out 1s infinite alternate;
   position: absolute;
   left: 82px;
   top: 153px;
   width: 1258px;//1258
   height: 765px; 
-  background-image: url(/img/main/main-img.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  // background-image: url(/img/main/main-img.png);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  overflow: hidden;
+  // section.main:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 1258px;
+  //   height: 756px;
+  //   background-image: url(/img/main/main-img.png);
+  //   background-color: red;
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   z-index: 7;
+  // }
   border-radius: 12px;
   header.header.disp-flex {
     justify-content: space-between;
@@ -74,17 +97,75 @@ section.main {
       }
 
       div.comment {
+        margin-top: 54px;
         width: 360px;
         height: 127px;
         left: 111px;
         //top: 330px;
-        background: rgba(42, 74, 104, 0.51);
-        backdrop-filter: blur(20px);
+        background: rgba(42, 74, 104, 0.21);
+        backdrop-filter: blur(10px);
         border-radius: 100px;
-        div.comment__avatar {}
+        div.comment__avatar {
+          background: url(/img/main/avatar.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 90px;
+          margin-top: 18px;
+          margin-left: 32px;
+          position: relative;
+        }
         div.comment__article {
-          div.name {}
-          div.phrase {}
+          div.name {
+            width: 186px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 113.5%;
+            color: #EBF8F5;
+            margin-top: 31px;
+            margin-left: 20px;
+            }
+          div.phrase {
+            width: 186px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 113.5%;
+            text-transform: capitalize;
+            color: #9BC9D3;
+            margin-top: 8px;
+            margin-left: 20px;
+          }
+          div.likes-number {
+          }
+          div.likes-number:before {
+            position: absolute;
+            content: "";
+            background: url(/img/main/ellipse.png);
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+            top: 21px;
+            left: 92px;
+            z-index: 15;
+          }
+          div.likes-number:after {
+            position: absolute;
+            content: "+1";
+            width: 20px;
+            height: 20px;
+            top: 22px;
+            left: 98px;
+            z-index: 16;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 113.5%;
+            color: #314F47;
+          }
         }
       }
     }
@@ -121,3 +202,5 @@ section.main {
    //animation: swim-board-rotate 2s ease 2s infinite alternate;
  }
 
+
+ 
