@@ -59,11 +59,14 @@ $RegularFontColor: #343434;
       }
 }
 
-// @keyframes background-zoom {
-//   0%{}
-//   50%{}
-//   100%{}
-// }
+@keyframes background-zoom {
+  0%{}
+  50%{}
+  100%{
+       transform: scale(1.2);
+      // transform: rotate(-15deg);
+      }
+}
 
 @keyframes swim-board-rotate {
   0% {}

@@ -27,8 +27,16 @@ section.main:before { //main background in :before
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -10;
-  animation: background-rotate 5s ease-in-out 0s alternate;
-  animation-fill-mode: forwards;
+  animation-name: background-rotate, background-zoom;
+  animation-duration: 5s, 3s;
+  transition-timing-function: ease-in-out, linear;
+  animation-delay: 0s, 5s;
+  animation-direction: alternate, alternate;
+  animation-fill-mode: forwards, forwards;
+
+  // animation: background-rotate 5s ease-in-out 0s alternate;
+  // animation-fill-mode: forwards;
+  
   //animation: background-zoom 3s ease 5s alternate;
 }
 section.main {
@@ -226,6 +234,8 @@ section.cards.disp-flex {
     position: relative;
     margin-right: 45px;
     margin-left: 194px;
+    box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
+    transition: box-shadow 1s;
     p.plase {
       position: absolute;
       bottom: 50px;
@@ -235,10 +245,16 @@ section.cards.disp-flex {
       position: absolute;
       bottom: 30px;
     }
+    &:hover {
+      box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
+    }
   }
+
   div.cards__srilanka.card {
     position: relative;
     margin-right: 45px;
+    box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
+    transition: box-shadow 1s;
     p.plase {
       position: absolute;
       bottom: 50px;
@@ -247,11 +263,16 @@ section.cards.disp-flex {
     p.date {
       position: absolute;
       bottom: 30px;
+    }
+    &:hover {
+      box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
     }
   }
 
   div.cards__australia.card {
     position: relative;
+    box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
+    transition: box-shadow 1s;
     p.plase {
       color: yellow;
       position: absolute;
@@ -262,6 +283,9 @@ section.cards.disp-flex {
       color: yellow;
       position: absolute;
       bottom: 130px;
+    }
+    &:hover {
+      box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
     }
   }
   animation: cards-appear 3s ease-in-out 1s alternate;
