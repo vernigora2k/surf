@@ -27,8 +27,9 @@ section.main:before { //main background in :before
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -10;
-  animation: background-rotate 3s ease-in 1s alternate;
+  animation: background-rotate 5s ease-in-out 0s alternate;
   animation-fill-mode: forwards;
+  //animation: background-zoom 3s ease 5s alternate;
 }
 section.main {
   animation: main-appear 3s ease-in-out 1s alternate;
@@ -210,38 +211,61 @@ section.main {
 }
 
 
-//section caards-------------------------------
+//section cards-------------------------------
 
 section.cards.disp-flex {
+  position: absolute;
+  margin-top: 756px;
+  div.card {
+    width: 360px;
+    height: 230px;
+    border-radius: 12px;
+    z-index: 2;
+  }
   div.cards__bali.card {
+    position: relative;
+    margin-right: 45px;
+    margin-left: 194px;
     p.plase {
-
+      position: absolute;
+      bottom: 50px;
     }
 
     p.date {
-
+      position: absolute;
+      bottom: 30px;
     }
   }
-
   div.cards__srilanka.card {
+    position: relative;
+    margin-right: 45px;
     p.plase {
-
+      position: absolute;
+      bottom: 50px;
     }
 
     p.date {
-
+      position: absolute;
+      bottom: 30px;
     }
   }
 
   div.cards__australia.card {
+    position: relative;
     p.plase {
-
+      color: yellow;
+      position: absolute;
+      bottom: 60px;
     }
 
     p.date {
-
+      color: yellow;
+      position: absolute;
+      bottom: 130px;
     }
   }
+  animation: cards-appear 3s ease-in-out 1s alternate;
+  animation-fill-mode: forwards;
 }
 
  //section surfboard---------------------------

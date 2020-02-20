@@ -59,6 +59,12 @@ $RegularFontColor: #343434;
       }
 }
 
+// @keyframes background-zoom {
+//   0%{}
+//   50%{}
+//   100%{}
+// }
+
 @keyframes swim-board-rotate {
   0% {}
   75% {}
@@ -76,9 +82,19 @@ $RegularFontColor: #343434;
   100% {opacity: 1;}
 }
 
+@keyframes cards-appear{
+  0% {
+      top: 160px;
+      opacity: 0;
+      }
+  50% {opacity: 0.6;}
+  100% {top: 0px;
+        opacity: 1;}
+}
+
 @keyframes background-rotate {
-  0% {transform: rotate(15deg);}
-  //50% {transform: rotate(10deg);}
+  0% {transform: rotate(10deg);}
+  50% {transform: rotate(-10deg);}
   100% {}
 }
 //MIXINS
