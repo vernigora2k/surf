@@ -14,7 +14,7 @@ section.wawes {
   top: 0px;
 
   animation: swim-wawe 3s ease-in-out 
-             1s infinite alternate;
+             1s alternate;
  }
 
 //section main---------------------------------
@@ -22,15 +22,17 @@ section.main:before { //main background in :before
   position: absolute;
   content: "";
   width: 1258px;
-  height: 756px;
+  height: 796px;//756
   background-image: url(/img/main/main-img.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -10;
-  animation: background-rotate 3s ease-in 1s infinite alternate;
+  animation: background-rotate 3s ease-in 1s alternate;
+  animation-fill-mode: forwards;
 }
 section.main {
-  animation: main-appear 3s ease-in-out 1s infinite alternate;
+  animation: main-appear 3s ease-in-out 1s alternate;
+  animation-fill-mode: forwards;
   position: absolute;
   left: 82px;
   top: 153px;
@@ -55,6 +57,7 @@ section.main {
   header.header.disp-flex {
     justify-content: space-between;
     div.header__logo {
+      flex-shrink: 5;
       margin-left: 110px;
       margin-top: 28px;
       a {
@@ -62,6 +65,10 @@ section.main {
       }
     }
     nav.header__nav {
+      // position: absolute;
+      // z-index: 20;
+      // left: 550px;
+
       margin-right: 68px;//130
       margin-top: 32px;
       ul.nav-list.disp-flex {
@@ -69,6 +76,11 @@ section.main {
           margin-right: 62px;
           a {
             text-decoration: none;
+            transition-timing-function: ease;
+            transition-duration: 200ms;
+          }
+          &:hover {
+            font-weight: 800;
           }
         }
       }
@@ -101,10 +113,10 @@ section.main {
         width: 360px;
         height: 127px;
         left: 111px;
-        //top: 330px;
         background: rgba(42, 74, 104, 0.21);
         backdrop-filter: blur(10px);
         border-radius: 100px;
+        transition: 1s ease;
         div.comment__avatar {
           background: url(/img/main/avatar.png);
           background-size: contain;
@@ -167,12 +179,27 @@ section.main {
             color: #314F47;
           }
         }
+        &:hover {
+          backdrop-filter: blur(5px);
+          //opacity: 0.5;
+        }
       }
     }
+    
 
     div.main__column-now-in-bali {
+      margin-right: 149px;
+      margin-top: 119px;
       div.nov-in {
-
+        position: relative;
+      }
+      div.nov-in:before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        width: 8px;
+        height: 48px;
+        background-color: white;
       }
     }
 
@@ -182,6 +209,40 @@ section.main {
   }
 }
 
+
+//section caards-------------------------------
+
+section.cards.disp-flex {
+  div.cards__bali.card {
+    p.plase {
+
+    }
+
+    p.date {
+
+    }
+  }
+
+  div.cards__srilanka.card {
+    p.plase {
+
+    }
+
+    p.date {
+
+    }
+  }
+
+  div.cards__australia.card {
+    p.plase {
+
+    }
+
+    p.date {
+
+    }
+  }
+}
 
  //section surfboard---------------------------
  section.surfboard {
@@ -197,7 +258,7 @@ section.main {
   //  left: 950px;
    top: 200px;  //270
 
-   animation: swim-board 3s ease-out 1s infinite alternate;
+   animation: swim-board 3s ease-out 1s alternate;
    animation-fill-mode: forwards;
    //animation: swim-board-rotate 2s ease 2s infinite alternate;
  }
