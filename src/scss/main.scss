@@ -12,6 +12,7 @@ section.wawes {
   position: absolute;
   left: 0px;
   top: 0px;
+  opacity: 0;
 
   animation: swim-wawe 3s ease-in-out 
              1s alternate;
@@ -27,12 +28,13 @@ section.main:before { //main background in :before
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -10;
-  animation-name: background-rotate, background-zoom;
-  animation-duration: 5s, 3s;
-  transition-timing-function: ease-in-out, linear;
-  animation-delay: 0s, 5s;
-  animation-direction: alternate, alternate;
-  animation-fill-mode: forwards, forwards;
+  animation-name: background-rotate, background-zoom, background-rotate2;
+  animation-fill-mode: forwards, forwards, forwards;
+  animation-duration: 5s, 3s, 2s;
+  transition-timing-function: ease-in-out, linear, linear;
+  animation-delay: 0s, 5s, 8s;
+  animation-direction: alternate, normal, normal;
+  
 
   // animation: background-rotate 5s ease-in-out 0s alternate;
   // animation-fill-mode: forwards;
@@ -43,7 +45,8 @@ section.main {
   animation: main-appear 3s ease-in-out 1s alternate;
   animation-fill-mode: forwards;
   position: absolute;
-  left: 162px;
+  opacity: 0;
+  left: 102px;
   top: 153px;
   width: 1258px;//1258
   height: 765px; 

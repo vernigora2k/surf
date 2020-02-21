@@ -59,14 +59,7 @@ $RegularFontColor: #343434;
       }
 }
 
-@keyframes background-zoom {
-  0%{}
-  50%{}
-  100%{
-       transform: scale(1.2);
-      // transform: rotate(-15deg);
-      }
-}
+
 
 @keyframes swim-board-rotate {
   0% {}
@@ -100,6 +93,27 @@ $RegularFontColor: #343434;
   0% {transform: rotate(10deg);}
   50% {transform: rotate(-10deg);}
   100% {}
+}
+
+@keyframes background-zoom {
+  0%{}
+  50%{}
+  100%{
+       transform: rotate(-15deg) scale(1.25);
+      // transform: rotate(-15deg);
+      }
+}
+
+@keyframes background-rotate2 {
+  0% {//transform: scale(1.2);
+    transform: rotate(-15deg) scale(1.25);
+  }
+  50% {//transform: scale(1.2);
+  }
+  100% {
+    transform: rotate(0deg) scale(1.20);
+    //transform: scale(1.2);
+    }
 }
 //MIXINS
 //mixin font regular h2
