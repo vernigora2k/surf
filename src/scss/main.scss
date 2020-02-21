@@ -43,7 +43,7 @@ section.main {
   animation: main-appear 3s ease-in-out 1s alternate;
   animation-fill-mode: forwards;
   position: absolute;
-  left: 82px;
+  left: 162px;
   top: 153px;
   width: 1258px;//1258
   height: 765px; 
@@ -223,7 +223,8 @@ section.main {
 
 section.cards.disp-flex {
   position: absolute;
-  margin-top: 756px;
+  margin-top: 916px;//756
+  opacity: 0;
   div.card {
     width: 360px;
     height: 230px;

@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="dist/app.css" />
+    <link rel="stylesheet" href="/../surf/dist/app.css" />
 <link href="/dist/app.css" rel="stylesheet"></head>
 <body>
     <section class="wawes"></section>
     <section class="main">
-        <header class="header">
+        <header class="header disp-flex">
             <div class="header__logo">
                 <a href="#!"><img src="/img/main/logo.png" 
                               alt="Логотип"></a>
             </div>
             <nav class="header__nav">
-                <ul class="nav-list">
+                <ul class="nav-list disp-flex">
                     <li class="nav-list__item">
                         <a href="#!">About</a>
                     </li>
@@ -35,10 +35,48 @@
                 </ul>
             </nav>
         </header>
-
+        <div class="main disp-flex">
+            <div class="main__column-title">
+                <div class="title">Surf lessions</div>
+                <div class="under-title">Catch your first wave now</div>
+                <div class="comment disp-flex">
+                  <div class="comment__avatar"></div>
+                  <div class="comment__article">
+                      <div class="name">Juli Star, 26 y.o</div>
+                      <div class="phrase">“it was the best 3 hours of my life! So many emotions and 
+                        my first wave”
+                      </div>
+                      <div class="likes-number"></div>
+                  </div>  
+                </div>
+            </div>
+            <div class="main__column-now-in-bali">
+                <div class="nov-in">
+                    <img src="/img/main/now-in-bali.png" alt="now-in-bali">
+                </div>
+            </div>
+            <div class="none"></div>
+        </div>
     </section>
-    <section class="cards"></section>
+    <section class="cards disp-flex">
+        <div class="cards__bali card">
+            <img src="/img/cards/bali.png" alt="bali-foto">
+            <p class="plase">Bali</p>
+            <p class="date">January 9-22</p>
+        </div>
+        <div class="cards__srilanka card">
+            <img src="/img/cards/srilanka.png" alt="srilanka-foto">
+            <p class="plase">Sri Lanka</p>
+            <p class="date">February 1-15</p>
+        </div>
+        <div class="cards__australia card">
+            <img src="/img/cards/australia.png" alt="australia-foto">
+            <p class="plase">Australia</p>
+            <p class="date">February 20-28</p>
+        </div>
+    </section>
     <section class="surfboard"></section>
+    
     <script src="/dist/app.js"></script>
 <script type="text/javascript" src="/dist/app.js"></script></body>
 </html>

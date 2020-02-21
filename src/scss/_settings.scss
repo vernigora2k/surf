@@ -87,11 +87,12 @@ $RegularFontColor: #343434;
 
 @keyframes cards-appear{
   0% {
-      top: 160px;
+      //top: 160px;
       opacity: 0;
       }
   50% {opacity: 0.6;}
-  100% {top: 0px;
+  100% {//@extend: 0px;
+        transform: translateY(-160px);;
         opacity: 1;}
 }
 
