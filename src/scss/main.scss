@@ -42,20 +42,20 @@ section.main {
   opacity: 0;
   left: 102px;
   top: 153px;
-  width: 1258px;
+  width: 80%;
   height: 765px; 
   overflow: hidden;
   border-radius: 12px;
   header.header.disp-flex {
     justify-content: space-between;
     div.header__logo {
-      flex-shrink: 5;
       margin-left: 110px;
       margin-top: 28px;
     }
     nav.header__nav {
       margin-right: 68px;
       margin-top: 32px;
+      margin-left: 112px;
       ul.nav-list.disp-flex {
         li.nav-list__item {
           margin-right: 62px;
@@ -192,16 +192,18 @@ section.cards.disp-flex {//TODO: do cards to final stady
   position: absolute;
   margin-top: 916px;
   opacity: 0;
+  margin-left: 194px;
   div.card {
     width: 360px;
     height: 230px;
     border-radius: 12px;
     z-index: 2;
+    margin-bottom: 45px;
   }
   div.cards__bali.card {
     position: relative;
     margin-right: 45px;
-    margin-left: 194px;
+    //margin-left: 194px;
     box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
     transition: box-shadow 1s;
     p.plase {
