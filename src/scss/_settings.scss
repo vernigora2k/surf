@@ -25,18 +25,7 @@ html {
     flex-wrap: wrap;
 }
 
-//wrappers 
-.wrapper {
-    max-width: 1110px;
-    margin: 0 auto;
-}
-
-//colors 
-$MainScreenBlue: rgba(0, 91, 193, 0.6);
-$white: #ffffff;
-$RegularFontColor: #343434;
-
-//animations
+//animations---------------------------------------
 @keyframes swim-wawe {
   0% {
       background-position: 200% -20%;
@@ -46,21 +35,14 @@ $RegularFontColor: #343434;
 }
 
 @keyframes swim-board {
-  0% {
-      }
-  75% {
-      }
+  0% {}
+  75% {}
   100% {
-      //transform: translateX(100px);
-      background-position-x: 605px; //655
-      //left: 600px;
-      transform-origin: 1250px 200px 0px; //1250 200 0
-      transform: rotate(-90deg);
-      
-      }
+        background-position-x: 605px; 
+        transform-origin: 1250px 200px 0px; 
+        transform: rotate(-90deg);
+       }
 }
-
-
 
 @keyframes swim-board-rotate {
   0% {}
@@ -81,13 +63,13 @@ $RegularFontColor: #343434;
 
 @keyframes cards-appear{
   0% {
-      //top: 160px;
       opacity: 0;
       }
   50% {opacity: 0.6;}
-  100% {//@extend: 0px;
-        transform: translateY(-160px);;
-        opacity: 1;}
+  100% {
+        transform: translateY(-160px);
+        opacity: 1;
+       }
 }
 
 @keyframes background-rotate {
@@ -101,50 +83,14 @@ $RegularFontColor: #343434;
   50%{}
   100%{
        transform: rotate(-15deg) scale(1.25);
-      // transform: rotate(-15deg);
       }
 }
 
 @keyframes background-rotate2 {
-  0% {//transform: scale(1.2);
-    transform: rotate(-15deg) scale(1.25);
-  }
-  50% {//transform: scale(1.2);
-  }
+  0% {
+     transform: rotate(-15deg) scale(1.25);
+     }
   100% {
-    transform: rotate(0deg) scale(1.20);
-    //transform: scale(1.2);
-    }
+        transform: rotate(0deg) scale(1.20);
+       }
 }
-//MIXINS
-//mixin font regular h2
-// @mixin FontRegularH2 () {
-//   color: #343434;
-//   font-family: 'Oswald';
-//   font-style: normal;
-//   font-weight: normal;
-//   font-size: 18px;
-//   line-height: 27px;
-//   letter-spacing: 0.05em;
-//   text-transform: uppercase;
-// }
-//mixin font date in article
-// @mixin FontDateArticle {
-//   font-family: Open Sans;
-//   font-style: normal;
-//   font-weight: 600;
-//   font-size: 14px;
-//   line-height: 19px;
-//   align-self: center;
-//   color: $RegularFontColor;
-//   align-self: flex-end;
-// }
-//mixin font regular main small
-// @mixin FontRegularSmall {
-//   font-family: Open Sans;
-//   font-style: normal;
-//   font-weight: 300;
-//   font-size: 14px;
-//   line-height: 19px;
-//   color: $RegularFontColor;
-// }

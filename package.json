@@ -1,6 +1,6 @@
 {
   "name": "surf",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "surf lessons school",
   "main": "index.js",
   "scripts": {

@@ -13,7 +13,6 @@ section.wawes {
   left: 0px;
   top: 0px;
   opacity: 0;
-
   animation: swim-wawe 3s ease-in-out 
              1s alternate;
   animation-fill-mode: forwards;
@@ -35,12 +34,6 @@ section.main:before { //main background in :before
   transition-timing-function: ease-in-out, linear, linear;
   animation-delay: 0s, 5s, 8s;
   animation-direction: alternate, normal, normal;
-  
-
-  // animation: background-rotate 5s ease-in-out 0s alternate;
-  // animation-fill-mode: forwards;
-  
-  //animation: background-zoom 3s ease 5s alternate;
 }
 section.main {
   animation: main-appear 3s ease-in-out 1s alternate;
@@ -49,23 +42,9 @@ section.main {
   opacity: 0;
   left: 102px;
   top: 153px;
-  width: 1258px;//1258
+  width: 1258px;
   height: 765px; 
-  // background-image: url(/img/main/main-img.png);
-  // background-size: contain;
-  // background-repeat: no-repeat;
   overflow: hidden;
-  // section.main:before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 1258px;
-  //   height: 756px;
-  //   background-image: url(/img/main/main-img.png);
-  //   background-color: red;
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   z-index: 7;
-  // }
   border-radius: 12px;
   header.header.disp-flex {
     justify-content: space-between;
@@ -73,16 +52,9 @@ section.main {
       flex-shrink: 5;
       margin-left: 110px;
       margin-top: 28px;
-      a {
-        img {}
-      }
     }
     nav.header__nav {
-      // position: absolute;
-      // z-index: 20;
-      // left: 550px;
-
-      margin-right: 68px;//130
+      margin-right: 68px;
       margin-top: 32px;
       ul.nav-list.disp-flex {
         li.nav-list__item {
@@ -99,7 +71,6 @@ section.main {
       }
     }
   }
-
   div.main.disp-flex {
     justify-content: space-between;
     div.main__column-title {
@@ -116,11 +87,9 @@ section.main {
         color: #3D3A48;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
-
       div.under-title {
         margin-top: 6px;
       }
-
       div.comment {
         margin-top: 54px;
         width: 360px;
@@ -194,12 +163,9 @@ section.main {
         }
         &:hover {
           backdrop-filter: blur(5px);
-          //opacity: 0.5;
         }
       }
     }
-    
-
     div.main__column-now-in-bali {
       margin-right: 149px;
       margin-top: 119px;
@@ -215,19 +181,16 @@ section.main {
         background-color: white;
       }
     }
-
     div.none {
       flex-shrink: 5;
     }
   }
 }
 
-
 //section cards-------------------------------
-
-section.cards.disp-flex {
+section.cards.disp-flex {//TODO: do cards to final stady
   position: absolute;
-  margin-top: 916px;//756
+  margin-top: 916px;
   opacity: 0;
   div.card {
     width: 360px;
@@ -245,7 +208,6 @@ section.cards.disp-flex {
       position: absolute;
       bottom: 50px;
     }
-
     p.date {
       position: absolute;
       bottom: 30px;
@@ -254,7 +216,6 @@ section.cards.disp-flex {
       box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
     }
   }
-
   div.cards__srilanka.card {
     position: relative;
     margin-right: 45px;
@@ -264,7 +225,6 @@ section.cards.disp-flex {
       position: absolute;
       bottom: 50px;
     }
-
     p.date {
       position: absolute;
       bottom: 30px;
@@ -273,7 +233,6 @@ section.cards.disp-flex {
       box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
     }
   }
-
   div.cards__australia.card {
     position: relative;
     box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
@@ -283,7 +242,6 @@ section.cards.disp-flex {
       position: absolute;
       bottom: 60px;
     }
-
     p.date {
       color: yellow;
       position: absolute;
@@ -297,23 +255,20 @@ section.cards.disp-flex {
   animation-fill-mode: forwards;
 }
 
- //section surfboard---------------------------
+ //section surfboard-------------------------------
  section.surfboard {
    background: url(/img/surfboard/surfboard.png);
    background-repeat: no-repeat;
-   background-size: 1000px;       //1000 955
-   background-position-x: -70px; // -70
-   background-position-y: 20px; // -20 -55
+   background-size: 1000px;       
+   background-position-x: -70px; 
+   background-position-y: 20px; 
    z-index: 3;
    height: 1200px;
    width: 1600px;
    position: relative;
-  //  left: 950px;
-   top: 200px;  //270
-
+   top: 200px;  
    animation: swim-board 3s ease-out 1s alternate;
    animation-fill-mode: forwards;
-   //animation: swim-board-rotate 2s ease 2s infinite alternate;
  }
 
 
