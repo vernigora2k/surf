@@ -16,6 +16,7 @@ section.wawes {
 
   animation: swim-wawe 3s ease-in-out 
              1s alternate;
+  animation-fill-mode: forwards;
  }
 
 //section main---------------------------------
