@@ -167,7 +167,8 @@ section.main {
       }
     }
     div.main__column-now-in-bali {
-      margin-right: 149px;
+      flex-shrink: 5;
+      margin-right: 9px;//not adoptive: margin-right: 149px;
       margin-top: 119px;
       div.nov-in {
         position: relative;
@@ -182,7 +183,8 @@ section.main {
       }
     }
     div.none {
-      flex-shrink: 5;
+      flex-shrink: 50;
+      margin-left: 149px;
     }
   }
 }
