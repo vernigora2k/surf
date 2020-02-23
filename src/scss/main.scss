@@ -62,7 +62,7 @@ section.main {
           a {
             text-decoration: none;
             transition-timing-function: ease;
-            transition-duration: 200ms;
+            transition-duration: 100ms;
           }
           &:hover {
             font-weight: 800;
@@ -207,7 +207,7 @@ section.cards.disp-flex {//TODO: do cards to final stady
     margin-right: 45px;
     //margin-left: 194px;
     box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
-    transition: box-shadow 1s;
+    transition: box-shadow 100ms;
     p.plase {
       position: absolute;
       bottom: 50px;
@@ -264,12 +264,13 @@ section.cards.disp-flex {//TODO: do cards to final stady
    background: url(/img/surfboard/surfboard.png);
    background-repeat: no-repeat;
    background-size: 1000px;       
-   background-position-x: -70px; 
-   background-position-y: 20px; 
+   background-position-x: -15px; 
+   background-position-y: 35px; 
    z-index: 3;
-   height: 1200px;
+   height: 400px;
    width: 1600px;
    position: relative;
+   right: -10%;
    top: 200px;  
    animation: swim-board 3s ease-out 1s alternate;
    animation-fill-mode: forwards;
