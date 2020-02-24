@@ -210,11 +210,29 @@ section.cards.disp-flex {//TODO: do cards to final stady
     transition: box-shadow 100ms;
     p.plase {
       position: absolute;
-      bottom: 50px;
+      bottom: 41px;
+      left: 29px;
+      font-size: 37px;
+      line-height: 113.5%;
+      text-transform: capitalize;
+      color: #FFFFFF;
     }
     p.date {
       position: absolute;
-      bottom: 30px;
+      bottom: 25px;
+      left: 29px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 113.5%;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+    img.booking {
+      position: absolute;
+      top: 17px;
+      left: 29px;
     }
     &:hover {
       box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
@@ -227,11 +245,29 @@ section.cards.disp-flex {//TODO: do cards to final stady
     transition: box-shadow 1s;
     p.plase {
       position: absolute;
-      bottom: 50px;
+      bottom: 41px;
+      left: 29px;
+      font-size: 37px;
+      line-height: 113.5%;
+      text-transform: capitalize;
+      color: #FFFFFF;
     }
     p.date {
       position: absolute;
-      bottom: 30px;
+      bottom: 25px;
+      left: 29px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 113.5%;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+    img.booking {
+      position: absolute;
+      top: 17px;
+      left: 29px;
     }
     &:hover {
       box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
@@ -242,14 +278,30 @@ section.cards.disp-flex {//TODO: do cards to final stady
     box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.31);
     transition: box-shadow 1s;
     p.plase {
-      color: yellow;
       position: absolute;
-      bottom: 60px;
+      bottom: 41px;
+      left: 29px;
+      font-size: 37px;
+      line-height: 113.5%;
+      text-transform: capitalize;
+      color: #FFFFFF;
     }
     p.date {
-      color: yellow;
       position: absolute;
-      bottom: 130px;
+      bottom: 25px;
+      left: 29px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 113.5%;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+    img.booking {
+      position: absolute;
+      top: 17px;
+      left: 29px;
     }
     &:hover {
       box-shadow: 0px 55px 78px rgba(29, 44, 63, 0.71);
@@ -275,6 +327,8 @@ section.cards.disp-flex {//TODO: do cards to final stady
    animation: swim-board 3s ease-out 1s alternate;
    animation-fill-mode: forwards;
  }
+
+
 
 
  
