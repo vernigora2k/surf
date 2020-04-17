@@ -1,0 +1,139 @@
+//adaptive layout--------------------------------
+@media (max-width: 520px) {
+  //section wawes--------------------------------
+    section.wawes {
+      display: none;
+    }
+
+  //section main---------------------------------
+    section.main:before {
+      
+    }
+
+    section.main {
+      header.header.disp-flex {
+        
+        div.header__logo {
+          margin-left: 20px;
+          
+        }
+        nav.header__nav {
+          background-image: url(/img/mobile-adoptive/menuMobile.png);
+          background-repeat: no-repeat;
+          //background-color: yellow;
+          content: '';
+          width: 75px;
+          height: 60px;
+          margin-right: 20px;
+          margin-top: 20px;
+          ul.nav-list.disp-flex {
+            display: none;
+            li.nav-list__item {
+              
+              a {
+               
+              }
+              &:hover {
+               
+              }
+            }
+          }
+        }
+      }
+      div.main.disp-flex {
+        
+        div.main__column-title {
+          margin-left: 20px;
+          div.title {
+            font-size: 66px;
+          }
+          div.under-title {
+  
+          }
+          div.comment {
+            z-index: 23;
+            width: 315px;
+            height: 110px;
+            margin-top: 20px;
+            margin-left: 20px;
+            background: rgba(42, 74, 104, 0.51);
+            div.comment__avatar {
+              
+            }
+            div.comment__article {
+              div.name {
+               
+                }
+              div.phrase {
+                width: 150px;
+                font-size: 10px;
+              }
+              div.likes-number {
+              }
+              div.likes-number:before {
+                
+              }
+              div.likes-number:after {
+            
+              }
+            }
+            &:hover {
+              
+            }
+          }
+        }
+        div.main__column-now-in-bali {
+         display: none;
+        }
+        div.none {
+         
+        }
+      }
+    }
+
+    //section cards-------------------------------
+section.cards.disp-flex {
+  margin-left: 145px;
+  margin-top: 776px;
+  z-index: 20;
+  div.card {
+    width: 304px;
+    height: 194px;
+    overflow: hidden;
+  }
+  div.cards__bali.card {
+
+    p.plase {
+      
+    }
+    p.date {
+     
+    }
+    img.booking {
+      
+    }
+    &:hover {
+      
+    }
+  }
+  div.cards__srilanka.card {
+      display: none;
+  }
+  div.cards__australia.card {
+    display: none;
+  }
+  animation: cards-appear 3s ease-in-out 1s alternate;
+  animation-fill-mode: forwards;
+}
+
+//section surfboard-------------------------------
+section.surfboard {
+ 
+ background-size: 800px;
+ right: 140%;
+ top: 100px;
+ z-index: 5;
+}
+
+}
+

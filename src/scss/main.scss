@@ -1,5 +1,6 @@
 @import "./settings";
 
+
 //section wawes-------------------------------
 section.wawes {
   background: url(/img/wawes/wawe-right.png);
@@ -47,7 +48,7 @@ section.main {
   overflow: hidden;
   border-radius: 12px;
   header.header.disp-flex {
-    justify-content: space-between;
+    justify-content: space-between; 
     div.header__logo {
       margin-left: 110px;
       margin-top: 28px;
@@ -103,7 +104,7 @@ section.main {
           background: url(/img/main/avatar.png);
           background-size: contain;
           background-repeat: no-repeat;
-          width: 90px;
+          width: 73px;
           margin-top: 18px;
           margin-left: 32px;
           position: relative;
@@ -311,7 +312,7 @@ section.cards.disp-flex {
   animation-fill-mode: forwards;
 }
 
- //section surfboard-------------------------------
+ //section surfboard------------------------------- 
  section.surfboard {
    background: url(/img/surfboard/surfboard.png);
    background-repeat: no-repeat;
@@ -329,6 +330,5 @@ section.cards.disp-flex {
  }
 
 
-
-
+ @import "./mobile";
  
